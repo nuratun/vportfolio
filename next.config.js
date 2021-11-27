@@ -1,12 +1,14 @@
 const withNextra = require('nextra')('nextra-theme-blog', './theme.config.js')
 
-module.exports = withNextra(), 
+module.exports = { 
+  withNextra(), 
   async redirects() {
         return [
           {
             source: '/hello',
-            destination: 'https://vercel.com',
+            destination: 'https://vercel.com/',
             permanent: true,
           },
         ]
-      },
+      }
+}

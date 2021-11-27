@@ -1,8 +1,8 @@
 const withNextra = require('nextra')('nextra-theme-blog', './theme.config.js')
 
 module.exports = { 
-  withNextra(), 
-  async redirects() {
+  withNextra(
+    async redirects() {
         return [
           {
             source: '/hello',
@@ -11,4 +11,5 @@ module.exports = {
           },
         ]
       }
-}
+} )
+

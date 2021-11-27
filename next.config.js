@@ -5,7 +5,7 @@ const redirectVercel = {
           {
             source: '/hello',
             destination: 'https://vercel.com/',
-            permanent: true,
+            permanent: false,
           },
         ]
       },
